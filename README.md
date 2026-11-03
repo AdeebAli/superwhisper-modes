@@ -15,7 +15,11 @@ My local [Superwhisper](https://superwhisper.com) mode setup. This repo is the l
 | Mail | `new-mode-4.json` | sv-1 | Sonnet 5.5 | None | Dictation cleanup for email, with a semi-formal tone setting |
 | Message | `new-mode.json` | sv-1 | sl-1 | None | Dictation cleanup for messages, with a semi-casual tone setting |
 | Offline | `offline.json` | Cohere Transcribe (q4) | s1-mini | None | Dictation using only local models, with no custom prompt |
-| Meeting | `system-meeting.json` | Not set | sl-1 | System audio | Meeting capture, with no custom prompt |
+| Meeting | `system-meeting.json` | Not set | sl-1 | System audio | Meeting capture with speaker separation on, and no custom prompt |
+| Polish (Local) | `local-polish.json` | Parakeet v3 | s1-mini | Active app | Polish, using only local models |
+| Command (Local) | `local-command.json` | Parakeet v3 | s1-mini | Selection, clipboard, active app | Command, using only local models |
+| Command Code (Local) | `local-command-code.json` | Parakeet v3 | s1-mini | Selection, clipboard | Command Code, using only local models |
+| Code Task to Agent Prompt (Local) | `local-code-task.json` | Parakeet v3 | s1-mini | Selection, clipboard | Code Task to Agent Prompt, using only local models |
 
 Super, Note, Mail and Message share the same cleanup prompt. "Reads" is the context each mode can send to its language model, and it's worth checking before using a cloud model with sensitive material.
 
