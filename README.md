@@ -29,13 +29,3 @@ Super, Note, Mail and Message share the same cleanup prompt. "Reads" is the cont
 | Sonnet 5.5 (`claude-sonnet-5-5`) | Language | Cloud |
 | `s1-mini` | Language | Local |
 | `sl-1` | Language | Unconfirmed: no local files found, and not in the app's cloud model list |
-
-## Possible gaps
-
-- **Backups:** `~/superwhisper/settings/settings.json` (vocabulary, replacements, mode order) and `~/superwhisper/meeting-templates/` sit outside this repo, so a restore from here wouldn't bring them back.
-- **Mode list:** `settings.json` still lists `new-mode-5`, which no longer exists, and doesn't list `system-meeting`. Check that Meeting appears where expected.
-- **Speaker separation:** it's on for Note but off for Meeting, which looks swapped.
-- **Auto-activation:** no mode has activation apps or sites set. Command Code could switch on in an editor, Message in chat apps and Mail in an email client.
-- **Mail and Message prompts:** both use the generic cleanup prompt, and its "keep the original tone" instruction may conflict with their tone settings. Polish already has destination-specific rules that could be adapted.
-- **Vocabulary:** the only custom term is "Superwhisper". Names, tools and project terms that get misheard could be added.
-- **Private rewriting:** Offline has no custom prompt, and all custom-prompt modes use a cloud language model. A local version of Command would cover sensitive text.
